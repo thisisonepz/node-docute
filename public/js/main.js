@@ -9,8 +9,8 @@ const chars = {
 L2Dwidget.init({
   display: {
     position: 'right',
-    width: 150,
-    height: 300
+    width: 200,
+    height: 400
   },
   dialog: {
     // 开启对话框
@@ -80,7 +80,7 @@ const ColorBox = {
   props: ['color'],
   template: `<span class="color-box" :style="{background:color}"></span>`
 };
-axios.get('http://localhost:3000/users').then(res => {
+axios.get('http://localhost:6666/users').then(res => {
   new Docute({
     target: '#docute',
     layout: 'narrow',
