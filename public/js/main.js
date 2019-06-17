@@ -80,11 +80,11 @@ const ColorBox = {
   props: ['color'],
   template: `<span class="color-box" :style="{background:color}"></span>`
 };
-axios.get('http://localhost:6666/users').then(res => {
+axios.get('http://localhost:8888/users').then(res => {
   new Docute({
     target: '#docute',
     layout: 'narrow',
-    title: '整机优化系统文档',
+    title: '文档',
     darkThemeToggler: true,
     componentMixins: [{
       data() {
