@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/css/style.css')
+        link(rel='stylesheet', href='/css/docute.css')
+    body
+        block content
+    block scripts
+        script(src='/js/docute.js')
+        script(src='https://unpkg.com/axios/dist/axios.min.js')
+        script(src='./js/L2Dwidget.min.js')
+        script(src='/js/main.js')

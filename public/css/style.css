@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.color-box {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  border: 1px solid #333;
+}
+.markdown-header{
+  color:#1990b8;
+}
