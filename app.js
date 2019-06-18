@@ -7,14 +7,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var app = express();
 require('./fs.js');
-var cors = require("cors");// 这个比较重要，解决跨域问题.npm install cors 装一下
 
-app.use(cors({
-  origin: ['http://68.6.2.6:3000'], // 这是本地的默认地址和端口，vue启动的项目就是在这里，这样保证了等会我们在浏览器能访问服务器的数据（user.json）
-  methods: ["GET", "POST"],
-  alloweHeaders: ["Content-Type", "Authorization"]
-
-}));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
